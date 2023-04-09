@@ -15,10 +15,23 @@ function conditional (){
   }
 
   function scopeValue (){
-    for (i = 0; i < 5; i ++) {
-        console.log("the number is" + 1);
-    }
-  }
+    if (0==0) {
+      var x = 0;
+      var y = 1;
+    } else {
+      alert("Why is 0 not 0?")
+    };
+    
+    
+  const z = x;
+  alert("Use Inspect to see the console and inspect the code.")
+  console.log("Check the sources to see this code and study the scope of the code.")
+  console.log("Value of x as originally declared: " + x);
+  console.log("Value of y as originally declared: " + y);
+  var x = x+2;
+  console.log("Value of x + 2:" + x);
+  console.log("Value of z: " + z + " does not change.");
+};
 
   function evalNumber(){
     var inputValue = (prompt("Enter any five-digit number without commas"))
