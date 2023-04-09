@@ -30,3 +30,9 @@ function conditional (){
       alert(inputValue + "is an odd number.")
     }
   }
+
+  function changeTitle(){
+    let selectedElement = document.getElementById("programCard");
+    console.log(selectedElement);
+    selectedElement.innerText = "DIGS";
+  }
