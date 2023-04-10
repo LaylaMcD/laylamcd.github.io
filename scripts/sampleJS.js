@@ -111,3 +111,5 @@ function getMinutes(){
     }
     map.on('click', onMapClick);
   }
+
+  
