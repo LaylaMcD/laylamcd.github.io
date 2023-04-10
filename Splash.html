@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+         crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+         crossorigin=""></script>
+        <script src="/scripts/sampleJS.js"></script>
+        <link rel="stylesheet" href="CSS/BSstyle.css"> 
+            <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html">Home</a></li>
+                  <li><a class="dropdown-item" href="About.html">About</a></li>
+                  <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                  <li><a class="dropdown-item" href="/Splash.html">SplashPage</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/Map.html">MapAPI</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard/HelloWorld.html">DigitalChalkboard</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </head>
+    <div class="container mt-5"> 
+    <button type="button" class="btn btn-primary" id="p1" onclick="getMinutes()">Time</button>
+    <button id="p2" onclick="myFunction()">Click Me</button>
+
+    <div id="myDIV">
+    <img id="Chicago" class="center" src="/images/2560px-University_of_Chicago_wordmark.svg.jpg" class="card-img-top">
+
+    </div>
+    </div>
+    <div class="container">
+    <body href="scripts/sampleJS.js" onLoad="getMinutes()"></body>
+
+     <div id="Inner">  
+        <div>
+            <h1>Overlap, Blindspots and Expertise</h1>
+        <h1> An Overview of the Coverage of Cultural Heritage Sites in Morocco</h1>
+        </div>
+    </div>
+    <h2><strong>Description</strong></h2>
+    <p id="second">This ArcGIS map provides a brief overview of cultural heritage sites in Morocco recommended for further research across Wikipedia and Manar al-Athar platforms.  Despite being recognized as UNESCO World Heritage sites, some of these areas suffer from a lack of research. Adding more detail and information about these sites will help in establishing a chronology that pays attention to historic Moroccan sites outside of Roman archaeology and increases the scope of research on Moroccan cultural heritage. </p>
+    <img src="/images/55428scr_65620337cb172c4.jpg" class="card-img-top">
+    
+    <button id="map" onclick="mapLoad()">Click Here</button>
+
+    <div class="card-group">
+        <div class="card">
+            <img src="/images/150911pre_cb0ef2c1f1ad503.jpg" class="card-img-top" alt="Responsive-Image" class="rounded">
+            <div class="card-body">
+              <h5 id="programCard" class="card-title">Coastal Sites</h5>
+              <p class="card-text">These sites can be found all along the Western coast of Morocco, facing out towards the Atlantic. The more Northern cities show distinct signs of Spanish influence, from their proximity to the Iberian peninsula.</p>
+              <a href="https://storymaps.arcgis.com/stories/8b769e9047d744c38fbe5d29f9ba1f4a" class="btn btn-primary" id="p2">Go to Sites</a>
+            </div>
+            <div class="card-footer">
+        
+              </div>
+          </div>
+          <div class="card">
+            <img src="/images/56530scr_420b5fe51b9858f.jpg" class="card-img-top" alt="Responsive-Image" class="rounded">
+            <div class="card-body">
+              <h5 class="card-title">Middle Region</h5>
+              <p class="card-text">Not quite by the desert, and far from the ocean, these sites still played an important role as intermediary post stations along the routes to trade and shipping ports on the coast.</p>
+              <a href="https://storymaps.arcgis.com/stories/8b769e9047d744c38fbe5d29f9ba1f4a" class="btn btn-primary" id="p2">Go to Sites</a>
+            </div>
+            <div class="card-footer">
+            </div>
+         </div>
+          <div class="card">
+            <img src="/images/56424scr_20b77fa437c682c.jpg" class="card-img-top" alt="Responsive-Image" class="rounded">
+            <div class="card-body">
+              <h5 class="card-title">Desert Sites</h5>
+              <p class="card-text">These sites are primarily found at the edges of the Sahara desert. Many are key trade sites for camel caravans preparing to make the long journey through the desert. </p>
+              <a href="https://storymaps.arcgis.com/stories/8b769e9047d744c38fbe5d29f9ba1f4a" class="btn btn-primary" id="p2">Go to Sites</a>
+            </div>
+            <div class="card-footer">
+        
+              </div>
+          </div>
+        </div>
+        
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+ </html>
+    

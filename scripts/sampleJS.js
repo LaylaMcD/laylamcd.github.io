@@ -3,7 +3,6 @@ function howdy(firstName) { firstName = "Layla"
 }
 
 function conditional (){ 
-    alert("Use Inspect to see the console and inspect the code.");
     var currentHour = new Date().getHours();
     if (currentHour < 10) {
       alert("Good morning!");
@@ -12,6 +11,16 @@ function conditional (){
     } else {
       alert("Good evening!");
     }
+  }
+function getMinutes(){
+  var date = new Date();
+	var current_time = date.getMinutes();
+	document.getElementById("p1").innerHTML = current_time;
+}
+  
+
+  function myFunction() {
+    document.getElementById("myDIV").style.display = "none";
   }
 
   function scopeValue (){
@@ -22,6 +31,7 @@ function conditional (){
       alert("Why is 0 not 0?")
     };
     
+
     
   const z = x;
   alert("Use Inspect to see the console and inspect the code.")
@@ -48,4 +58,56 @@ function conditional (){
     let selectedElement = document.getElementById("programCard");
     console.log(selectedElement);
     selectedElement.innerText = "DIGS";
+  }
+
+  function parentFunction(){
+    let a = 1;
+    function childFunction()
+    {
+      var b = a + 2;
+      return b;
+    }
+    return childFunction();
+  }
+  
+  function mapLoad(){
+    //Define the lat lon coordinate
+    var latLng = [31.628674, -7.992047];
+  
+    var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGF5bGFtY2QiLCJhIjoiY2xnOXFkMnU2MGMxcDNmcDd5cGZlYTg4dCJ9.pIWnOMdwkXcxoNANfD3_7Q';
+  
+    var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+    streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+  
+    var map = L.map('map', {
+      center: latLng,
+      zoom: 16,
+      layers: [streets]
+    });
+  
+    var baseLayers = {
+      "Grayscale": grayscale,
+      "Streets": streets
+    };
+  
+    L.control.layers(baseLayers).addTo(map);
+  
+    L.marker(latLng).addTo(map)
+    .bindPopup("<b>Morocco</b>").openPopup();
+  
+    L.marker(41.789729, -87.595893).addTo(map)
+    .bindPopup("<b>Robie<br>House</b>").openPopup();
+  
+    //Click event
+    var popup = L.popup();
+  
+    function onMapClick(e) {
+      popup
+      .setLatLng(e.latlng)
+      .setContent("You clicked the map at " + e.latlng.toString())
+      .openOn(map);
+    }
+    map.on('click', onMapClick);
   }
