@@ -25,13 +25,13 @@ function mapLoad(){
     L.marker(latLng).addTo(map)
     .bindPopup("<b>Syria<br>Damascus</b>").openPopup();
 
-    L.marker(32.927778, 35.081667).addTo(map)
+    L.marker([32.927778, 35.081667]).addTo(map)
     .bindPopup("<b>Acre</b>").openPopup();
   
-    L.marker(30, 31.233333).addTo(map)
+    L.marker([30, 31.233333]).addTo(map)
     .bindPopup("<b>Egypt<br>Fustat</b>").openPopup();
 
-    L.marker(35.833333, 10.633333).addTo(map)
+    L.marker([35.833333, 10.633333]).addTo(map)
     .bindPopup("<b>Tunisia<br>Sousse</b>").openPopup();
   
     //Click event
@@ -45,3 +45,19 @@ function mapLoad(){
     }
     map.on('click', onMapClick);
   }
+
+  $('.carousel').carousel({
+    interval: 2000
+  })
+
+  function ArrayFunction() {
+    arrayToPass = [Egypt, Syria, Greece];
+  
+    unmodifiableFunction(...arrayToPass);
+}
+      
+function unmodifiableFunction(a, b, c) {
+            document.getElementById("gfg").innerHTML = `First value is: ${a}
+            Second value is: ${b}
+            Third value is:  ${c}`
+}

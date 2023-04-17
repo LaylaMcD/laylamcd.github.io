@@ -44,10 +44,22 @@ function getMinutes(){
 };
 
   function evalNumber(){
-    var inputValue = (prompt("Enter any five-digit number without commas"))
+    var inputValue = (prompt("Enter any number without commas"))
     if (isNaN(inputValue)) {
       alert(inputValue + " is not a number.")
     } else if (inputValue%2==0){
+      alert(inputValue + "is an even number.")
+    } else {
+      alert(inputValue + "is an odd number.")
+    }
+  }
+  function eval5Number(){
+    var inputValue = (prompt("Enter any five-digit number without commas"))
+    if (isNaN(inputValue)) {
+      alert(inputValue + " is not a number.")
+    } else if (inputValue.toString().length !=5){
+      alert(inputValue + "is not a 5digit number.")
+    } else if(inputValue%2 == 0){
       alert(inputValue + "is an even number.")
     } else {
       alert(inputValue + "is an odd number.")
@@ -97,7 +109,7 @@ function getMinutes(){
     L.marker(latLng).addTo(map)
     .bindPopup("<b>Morocco</b>").openPopup();
   
-    L.marker(41.789729, -87.595893).addTo(map)
+    L.marker([41.789729, -87.595893]).addTo(map)
     .bindPopup("<b>Robie<br>House</b>").openPopup();
   
     //Click event
@@ -112,4 +124,18 @@ function getMinutes(){
     map.on('click', onMapClick);
   }
 
-  
+  function graduate(){
+    var year = prompt("Enter your intended graduation year in four digits")
+    var month = prompt("Enter your intended graduation month in two digits")
+    if (year == 2023 && month > 06){
+        alert("Congratulations on your upcoming graduation!")
+    } else if(year > 2023){
+        alert("You're almost there!")
+    } else(
+        alert("You're an alum")
+    )
+    }
+
+    function handleClick(event){
+      event.target.id == 'show' ? showAlert(): evalNumber;
+    }

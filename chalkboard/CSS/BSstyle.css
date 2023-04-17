@@ -15,3 +15,7 @@ col{color:aqua}
     width: 100%;
 } 
 
+
+footer {
+  display: max-width 400px;
+}
