@@ -139,3 +139,23 @@ function getMinutes(){
     function handleClick(event){
       event.target.id == 'show' ? showAlert(): evalNumber;
     }
+function CountrySpotter(){
+  var country = prompt("Enter the country of your choosing")
+  if (country == "Germany", "Italy", "Japan"){
+    alert("The country you have chosen was an axis power during World War II")
+  } else if(country == "USA", "Great Britain" , "Soviet Union"){
+    alert("The country you have chosen was an allied power during World War II")
+  }
+
+}
+    function ArrayFunction() { 
+      arrayToPass = ["Greece", "Egypt", "Lebanon"];
+            
+    unmodifiableFunction.apply(null, arrayToPass);
+  }
+      
+  function unmodifiableFunction(a, b, c) {
+    document.getElementById("gfg").innerHTML = `First value is: ${a}
+    Second value is: ${b}
+    Third value is:  ${c}`
+  }

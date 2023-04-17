@@ -50,14 +50,4 @@ function mapLoad(){
     interval: 2000
   })
 
-  function ArrayFunction() {
-    arrayToPass = [Egypt, Syria, Greece];
-  
-    unmodifiableFunction(...arrayToPass);
-}
-      
-function unmodifiableFunction(a, b, c) {
-            document.getElementById("gfg").innerHTML = `First value is: ${a}
-            Second value is: ${b}
-            Third value is:  ${c}`
-}
+ 
