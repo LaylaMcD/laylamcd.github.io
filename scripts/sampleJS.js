@@ -159,3 +159,30 @@ function CountrySpotter(){
     Second value is: ${b}
     Third value is:  ${c}`
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn1 = document.getElementById("button_01");
+    btn1.addEventListener('click', conditional);
+
+    const btn2 = document.querySelector('#button_02');
+    btn2.addEventListener('click', howdy);
+
+    const btn3 = document.querySelector('#button_03');
+    btn3.addEventListener('click', scopeValue);
+
+    const btn4 = document.querySelector('#button_04');
+    btn4.addEventListener('click', evalNumber);
+
+    const btn5 = document.querySelector('#button_05');
+    btn5.addEventListener('click', eval5Number);
+
+    const btn6 = document.querySelector('#button_06');
+    btn6.addEventListener('click', (e) => {
+      console.log(e);
+      alert('A nested function has access to variables in the parent function: 2 + 1 = ' + parentFunction());
+
+    const btn7 = document.querySelector('#button_07');
+    btn7.addEventListener('click', graduate);
+    })
+
+  })
