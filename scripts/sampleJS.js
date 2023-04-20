@@ -125,11 +125,10 @@ function getMinutes(){
   }
 
   function graduate(){
-    var year = prompt("Enter your intended graduation year in four digits")
-    var month = prompt("Enter your intended graduation month in two digits")
-    if (year == 2023 && month > 06){
+    var inputValue = (prompt("Enter in your graduation date in four digits"))
+    if(inputValue == 2023){
         alert("Congratulations on your upcoming graduation!")
-    } else if(year > 2023){
+    } else if(inputValue > 2023){
         alert("You're almost there!")
     } else(
         alert("You're an alum")
@@ -180,9 +179,8 @@ function CountrySpotter(){
     btn6.addEventListener('click', (e) => {
       console.log(e);
       alert('A nested function has access to variables in the parent function: 2 + 1 = ' + parentFunction());
+    })
 
     const btn7 = document.querySelector('#button_07');
     btn7.addEventListener('click', graduate);
-    })
-
   })
