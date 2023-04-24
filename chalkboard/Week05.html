@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/chalkboard/CSS/BSstyle.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></head>
+    <link rel="stylesheet" href="/chalkboard/CSS/BSstyle.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/chalkboard/scripts/Sound.js"></script>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard/HelloWorld.html">DigitalChalkboard</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/chalkboard/Week01.html">Week01</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard/Week03.html">Week03</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard/Week02.html">Week02</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/chalkboard/java_exercises.html">JSExercises</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard/rstiTexts.html">ochreAPI</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard/Wiki.html">WikiAPI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="text-center" id="heading">Music of the Middle East</h1>
+</head>
+<body>
+  <div class="container-fluid">
+    <a id="banana" onclick="Howl()">
+      <img src="/chalkboard/images/Oud.jpg" class="img-thumbnail" alt="oud">
+    </a>
+    
+  </div>
+  <div class="container-fluid">
+    <div class="container-fluid pb-4">
+      <a href="https://howlerjs.com/"><img id="howlerImg" class="img-thumbnail" src="media/howler.jpg" alt="howler image" style="max-width: 30vw"></a>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="h3 py-3">Click an image to find out!</div>
+        <div class="col-lg-3">
+          <h2 class="animalTitle">Cow</h2>
+          <img id="animal01" src="media/cow.jpg" class="img-thumbnail howlerImage" alt="cow">
+        </div>
+        <div class="col-lg-3">
+          <h2 class="animalTitle">Duck</h2>
+          <img id="animal02" src="media/duck.jpg" class="img-thumbnail howlerImage" alt="duck">
+        </div>
+        <div class="col-lg-3">
+          <h2 class="animalTitle">Horse</h2>
+          <img id="animal03" src="media/horse.jpg" class="img-thumbnail howlerImage" alt="horse">
+        </div>
+        <div class="col-lg-3">
+          <h2 class="animalTitle">Fox</h2>
+          <img id="animal04" src="media/fox.jpg" class="img-thumbnail howlerImage" alt="cow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="Howl()">Play</button>
+  <h2 class="text-center" id="heading">Last Item Function</h2>
+  <p>Order output alphabetically</p>
+  <button type="submit" class="btn btn-primary" onclick="lastItem()">Get Last Item</button>
+  <p id="originalArray">
+  </p>
+  <p id="lastAlphabetically">
+  </p>
+</body>
+
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<style> @media screen and (max-width: 500px)  {
+  .block {
+     display:none;
+  }
+}
+</style>
+<div class="block">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2023 Research</p>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="/chalkboard/HelloWorld.html" class="nav-link px-2 text-muted">DigitalChalkboard</a></li>
+      <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="/Contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      <li class="nav-item"><a href="/About.html" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</div>
+<!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</html>

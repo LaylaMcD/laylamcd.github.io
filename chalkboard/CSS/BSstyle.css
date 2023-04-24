@@ -19,3 +19,17 @@ col{color:aqua}
 footer {
   display: max-width 400px;
 }
+
+h2{
+    text-align: center;
+}
+col{color:rgb(0, 21, 255)}
+
+img {
+    max-width: 350px;
+  }
+
+  
+#banana:hover{
+    width: 30vw
+}

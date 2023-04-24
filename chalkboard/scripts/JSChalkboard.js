@@ -50,13 +50,14 @@ function mapLoad(){
     interval: 2000
   })
 
- function addElements(){
-  var valueArray = ['How to Add', 'HTML elements', 'to a page'];
-  for (i in valueArray) {
-    var newDiv = document.createElement('div');
-    newDiv.setAttribute('class', 'row');
-    newDiv.setAttribute('id', 'div'+i);
-    document.getElementById('addElements').appendChild(newDiv);
-    newDiv.innerText = valueArray[i];
-  };
- }
+  function addElements(){
+    var valueArray = ['How to Add', 'HTML elements', 'to a page'];
+    for (i in valueArray) {
+      var newDiv = document.createElement('div');
+      newDiv.setAttribute('class', 'row');
+      newDiv.setAttribute('id', 'div'+i);
+      document.getElementById('addElements').appendChild(newDiv);
+      newDiv.innerText = valueArray[i];
+    };
+   }
+  

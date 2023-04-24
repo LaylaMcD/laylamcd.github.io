@@ -159,6 +159,7 @@ function CountrySpotter(){
     Third value is:  ${c}`
   }
 
+  
   document.addEventListener('DOMContentLoaded', () => {
     const btn1 = document.getElementById("button_01");
     btn1.addEventListener('click', conditional);

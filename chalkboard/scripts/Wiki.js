@@ -25,3 +25,8 @@ function wikiAPI() {
     }
     connect.send();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btn1 = document.getElementById("button_01");
+    btn1.addEventListener('click', wikiAPI);
+})
