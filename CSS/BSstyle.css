@@ -50,3 +50,14 @@ col{color:aqua}
     border-radius: 10px;
     box-shadow: 2px 2px 1px white;
 }
+
+.howlerImage{
+    background-color: white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+.howlerImage:hover {
+    background-color: lightgoldenrodyellow;
+}

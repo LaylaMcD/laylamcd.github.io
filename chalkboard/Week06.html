@@ -2,10 +2,8 @@
 <html lang="en">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/chalkboard/CSS/BSstyle.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
-    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link rel="stylesheet" href="/chalkboard/CSS/BSstyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -45,40 +43,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1 class="text-center" id="heading">Music of the Middle East</h1>
+    <h1 class="text-center" id="heading">Demography of the Middle East</h1>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="h3 py-3">Click an image to find out!</div>
-        <div class="col-lg-3">
-          <h2 class="animalTitle">Cow</h2>
-          <img id="animal01" src="/media/cow.jpg" class="img-thumbnail howlerImage" alt="cow">
-        </div>
-        <div class="col-lg-3">
-          <h2 class="animalTitle">Duck</h2>
-          <img id="animal02" src="/media/duck.jpg" class="img-thumbnail howlerImage" alt="duck">
-        </div>
-        <div class="col-lg-3">
-          <h2 class="animalTitle">Horse</h2>
-          <img id="animal03" src="/media/horse.jpg" class="img-thumbnail howlerImage" alt="horse">
-        </div>
-        <div class="col-lg-3">
-          <h2 class="animalTitle">Fox</h2>
-          <img id="animal04" src="/media/fox.jpg" class="img-thumbnail howlerImage" alt="cow">
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="container">
+  <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+ </div>
 </body>
 
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<style> @media screen and (max-width: 500px)  {
-  .block {
-     display:none;
-  }
-}
 </style>
 <div class="block">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -96,7 +68,7 @@
   </footer>
 </div>
 <!-- Optional JavaScript -->
-<script src="/chalkboard/scripts/Sound.js"></script>
+<script src="/chalkboard/scripts/Chart.js"></script>
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>

@@ -49,28 +49,46 @@
 </head>
 <body>
   <div class="container-fluid">
+    <div class="row">
+      <div class="h3 py-3">Click an image to hear the music!</div>
+      <div class="col-lg-3">
+        <img id="Oud" src="/chalkboard/images/Oud.jpg" class="img-thumbnail howlerImage" alt="oud">
+      </div>
+      <div class="col-lg-3">
+        <img id="Sitar" src="/chalkboard/images/Sitar.jpg" class="img-thumbnail howlerImage" alt="sitar">
+      </div>
+      <div class="col-lg-3">
+        <img id="Qanun" src="/chalkboard/images/Qanun.jpg" class="img-thumbnail howlerImage" alt="qanun">
+      </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="container-fluid pb-4">
+      <a href="https://howlerjs.com/"><img id="howlerImg" class="img-thumbnail" src="media/howler.jpg" alt="howler image" style="max-width: 30vw"></a>
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="h3 py-3">Click an image to find out!</div>
         <div class="col-lg-3">
           <h2 class="animalTitle">Cow</h2>
-          <img id="animal01" src="/media/cow.jpg" class="img-thumbnail howlerImage" alt="cow">
+          <img id="animal01" src="media/cow.jpg" class="img-thumbnail howlerImage" alt="cow">
         </div>
         <div class="col-lg-3">
           <h2 class="animalTitle">Duck</h2>
-          <img id="animal02" src="/media/duck.jpg" class="img-thumbnail howlerImage" alt="duck">
+          <img id="animal02" src="media/duck.jpg" class="img-thumbnail howlerImage" alt="duck">
         </div>
         <div class="col-lg-3">
           <h2 class="animalTitle">Horse</h2>
-          <img id="animal03" src="/media/horse.jpg" class="img-thumbnail howlerImage" alt="horse">
+          <img id="animal03" src="media/horse.jpg" class="img-thumbnail howlerImage" alt="horse">
         </div>
         <div class="col-lg-3">
           <h2 class="animalTitle">Fox</h2>
-          <img id="animal04" src="/media/fox.jpg" class="img-thumbnail howlerImage" alt="cow">
+          <img id="animal04" src="media/fox.jpg" class="img-thumbnail howlerImage" alt="cow">
         </div>
       </div>
     </div>
   </div>
+  <button type="submit" class="btn btn-primary" onclick="Howl()">Play</button>
 </body>
 
 <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -96,7 +114,7 @@
   </footer>
 </div>
 <!-- Optional JavaScript -->
-<script src="/chalkboard/scripts/Sound.js"></script>
+<script src="/chalkboard/scripts/SoundCopy.js"></script>
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
