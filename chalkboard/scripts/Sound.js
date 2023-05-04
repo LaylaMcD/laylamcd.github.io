@@ -9,18 +9,38 @@ sound.play('oud');
 
 
   document.addEventListener('DOMContentLoaded', () => {
-    const btn1 = document.getElementById("animal01");
-    btn1.addEventListener('click', () => playAnimal('Cow'));
 
-    const btn2 = document.getElementById("animal02");
-    btn2.addEventListener('click', () => playAnimal('Duck'));
+    const images = document.getElementsByTagName('img');
+for (let i in images) {
 
-    const btn3 = document.getElementById("animal03");
-    btn3.addEventListener('click', () => playAnimal('Horse'));
+  images[i].addEventListener('click', () => {
+    const animal = images[i].getAttribute('id');
+    playAnimal(animal)});
 
-    const btn4 = document.getElementById("animal04");
-    btn4.addEventListener('click', () => playAnimal('Fox'));
+  images[i].addEventListener('mouseover', function() {
+    this.style.border = '3px solid red';
   });
+
+  images[i].addEventListener('mouseout', function() {
+    this.style.border = '0px';
+  });
+}
+})
+
+
+//  document.addEventListener('DOMContentLoaded', () => {  
+   // const btn1 = document.getElementById("animal01");
+   // btn1.addEventListener('click', () => playAnimal('Cow'));
+
+   // const btn2 = document.getElementById("animal02");
+    // btn2.addEventListener('click', () => playAnimal('Duck'));
+
+    // const btn3 = document.getElementById("animal03");
+    // btn3.addEventListener('click', () => playAnimal('Horse'));
+
+    // const btn4 = document.getElementById("animal04");
+    // btn4.addEventListener('click', () => playAnimal('Fox'));
+  //});
 
 function playAnimal(animalsound) {
   var sound = new Howl({
