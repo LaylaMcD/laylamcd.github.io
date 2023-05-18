@@ -15,7 +15,7 @@ for (let i in images) {
 
   images[i].addEventListener('click', () => {
     const animal = images[i].getAttribute('id');
-    playAnimal(animal)});
+    playAnimal(animalsound)});
 
   images[i].addEventListener('mouseover', function() {
     this.style.border = '3px solid red';
@@ -26,6 +26,20 @@ for (let i in images) {
   });
 }
 })
+
+function playAnimal(animalsound) {
+  var sound = new Howl({
+    src: [`/media/${animalsound}.mp3`, `/media/${animalsound}.webm`],
+    sprite: {
+      Cow: [0, 3000],
+      Duck: [0, 3000],
+      Horse: [0, 3000],
+      Fox: [37500, 7000],
+      
+    }
+  });
+  sound.play(animalsound);
+}
 
 
 //  document.addEventListener('DOMContentLoaded', () => {  
@@ -41,17 +55,3 @@ for (let i in images) {
     // const btn4 = document.getElementById("animal04");
     // btn4.addEventListener('click', () => playAnimal('Fox'));
   //});
-
-function playAnimal(animalsound) {
-  var sound = new Howl({
-    src: [`/media/${animalsound}.mp3`, `/media/${animalsound}.webm`],
-    sprite: {
-      Cow: [0, 3000],
-      Duck: [0, 3000],
-      Horse: [0, 3000],
-      Fox: [37500, 7000],
-      
-    }
-  });
-  sound.play(animalsound);
-}

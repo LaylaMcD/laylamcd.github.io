@@ -84,7 +84,7 @@ function getMinutes(){
   
   function mapLoad(){
     //Define the lat lon coordinate
-    var latLng = [31.628674, -7.992047];
+    var latLng = [34.020882, -6.841650];
   
     var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
     'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -107,10 +107,16 @@ function getMinutes(){
     L.control.layers(baseLayers).addTo(map);
   
     L.marker(latLng).addTo(map)
-    .bindPopup("<b>Morocco</b>").openPopup();
+    .bindPopup("<b>Rabat<br>Morocco</b>").openPopup();
+
+    L.marker([31.5125, -9.77]).addTo(map)
+    .bindPopup("<b>Essaouira</b>").openPopup();
   
-    L.marker([41.789729, -87.595893]).addTo(map)
-    .bindPopup("<b>Robie<br>House</b>").openPopup();
+    L.marker([33.873016, -5.540730]).addTo(map)
+    .bindPopup("<b>Meknes</b>").openPopup();
+
+    L.marker([31.284832194 -4.27166558]).addTo(map)
+    .bindPopup("<b>Rissani</b>").openPopup();
   
     //Click event
     var popup = L.popup();

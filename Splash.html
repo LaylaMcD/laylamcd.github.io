@@ -1,22 +1,29 @@
 <!doctype html>
 <html lang="en">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+     
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin="" />
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>
+     
+        <script src="/scripts/sampleJS.js"></script>
+
+        <link rel="stylesheet" href="CSS/BSstyle.css"> 
+        <div id="mainNav-placeholder"></div>
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-         crossorigin="" />
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-         crossorigin=""></script>
-        <script src="/scripts/sampleJS.js"></script>
-
-        <link rel="stylesheet" href="CSS/BSstyle.css"> 
-          <nav class="navbar navbar-expand-lg">
+    </head>
+        
+      <!--<nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,8 +54,7 @@
             </li>
           </ul>
         </div>
-      </nav>
-    </head>
+      </nav>-->
     <div class="container mt-5"> 
     <button type="button" class="btn btn-primary" id="p1" onclick="getMinutes()">Time</button>
     <button id="p2" onclick="myFunction()">Click Me</button>
@@ -59,7 +65,7 @@
     </div>
     </div>
     <div class="container">
-    <body href="scripts/sampleJS.js" onLoad="getMinutes()"></body>
+    <body href="scripts/sampleJS.js" onLoad="getMinutes()">
 
      <div id="Inner">  
         <div>
@@ -107,7 +113,10 @@
               </div>
           </div>
         </div>
-        
+        <div id="mainFooter-placeholder"></div>
+      <script src="/scripts/mainNav.js"></script>
+      <script src="/scripts/mainFooter.js"></script>
+    </body>    
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>

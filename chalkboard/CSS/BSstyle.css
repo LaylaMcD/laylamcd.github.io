@@ -8,7 +8,7 @@ body{
 h1{
     text-align: center;
 }
-col{color:aqua}
+col{color:#00ffff}
 
 #map {
     height: 400px;
@@ -20,16 +20,14 @@ footer {
   display: max-width 400px;
 }
 
-h2{
-    text-align: center;
-}
-col{color:rgb(0, 21, 255)}
-
-img {
-    max-width: 350px;
+.center {
+    margin: auto;
+    width: auto;
   }
 
-  
-#banana:hover{
-    width: 30vw
-}
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }

@@ -1,0 +1,1 @@
+$(function () {$("#foot-placeholder").load("/chalkboard/footer.html");});
