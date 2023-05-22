@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- jQuery, Bootstrap CSS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <link rel="stylesheet" href="/chalkboard/CSS/BSstyle.css" />
+   <div id="nav-placeholder"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="text-center" id="heading">Demography of the Middle East</h1>
+</head>
+<body>
+ <div class="container">
+  <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+ </div>
+ <div id="nav-placeholder"></div>
+  <div class="container mt-3">
+    <div id="title">Music API Example</div>
+    <form id="musicForm" onsubmit="event.preventDefault()">
+      <div class="row">
+        <div class="col">
+          <input id="artistInput" type="text" class="form-control" placeholder="Artist name">
+        </div>
+      </div>
+    </form>
+    <button id="musicButton" type="submit" class="btn btn-primary my-3">Search</button>
+    <div class="container" id="output"></div>
+    <div class="container d-none" id="tableContainer">
+      <p id="artistName" class="h2"></p>
+      <table id="tableOutput" class="table">
+        <thead>
+          <tr>
+            <th>Release date</th>
+            <th>Title</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="foot-placeholder"></div>
+  <script src="/chalkboard/scripts/nav.js"></script>
+  <script src="/chalkboard/scripts/footer.js"></script>
+  </body>
+
+</style>
+<!-- Optional JavaScript -->
+<script src="/chalkboard/scripts/Chart.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</html>

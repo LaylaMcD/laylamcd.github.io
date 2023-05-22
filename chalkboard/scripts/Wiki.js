@@ -10,23 +10,45 @@ function wikiAPI() {
         //console.log(wikiObject);
        // console.log(wikiObject.query.pages);
         var pages = wikiObject.query.pages;
-        for (var i in pages) {
+        var list = document.createElement('ul'); // Create a new unordered list element
 
-            var pageURL = "https://en.wikipedia.org/?curid="
+        for (var i in pages) {
+            var pageURL = "https://en.wikipedia.org/?curid=";
             var newAnchor = document.createElement("a");
-            newAnchor.href = pageURL+pages[i].pageid;
+            newAnchor.href = pageURL + pages[i].pageid;
             newAnchor.className = 'dblock';
             newAnchor.innerText = pages[i].title;
-            var newDiv  = document.createElement("div");
-            newDiv.setAttribute('class', 'row h4');
-            document.getElementById("wiki").appendChild(newAnchor);
-            newDiv.innerText = pages[i].title;
-        };
-    }
+
+            var listItem = document.createElement('li'); // Create a new list item element
+            listItem.appendChild(newAnchor); // Append the anchor element to the list item
+            list.appendChild(listItem); // Append the list item to the unordered list
+        }
+
+        document.getElementById("wiki").appendChild(list); // Append the unordered list to the "wiki" element
+    };
+
     connect.send();
 }
+    
 
 document.addEventListener('DOMContentLoaded', () => {
     const btn1 = document.getElementById("button_01");
     btn1.addEventListener('click', wikiAPI);
 })
+
+   
+//for (var i in pages) {
+
+   // var pageURL = "https://en.wikipedia.org/?curid="
+   // var newAnchor = document.createElement("a");
+   // newAnchor.href = pageURL+pages[i].pageid;
+   // newAnchor.className = 'dblock';
+   // newAnchor.innerText = pages[i].title;
+   // var newDiv  = document.createElement("div");
+   // newDiv.setAttribute('class', 'table');
+   // document.getElementById("wiki").appendChild(newAnchor);
+   // newDiv.innerText = pages[i].title;
+//};
+//}
+//connect.send();
+//}

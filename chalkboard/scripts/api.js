@@ -29,6 +29,7 @@ export async function getAquisitionsByYear() {
   }));
 }
 
+
 export async function getDimensions() {
   const dimensionsQuery = {
     dimensions: [
