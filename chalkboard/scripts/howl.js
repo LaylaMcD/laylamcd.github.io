@@ -8,7 +8,7 @@ for (let i in images) {
       playAnimal(animal)});
 
     images[i].addEventListener('mouseover', function() {
-      this.style.border = '3px solid blue';
+      this.style.border = '3px solid pink';
   });
 
     images[i].addEventListener('mouseout', function() {

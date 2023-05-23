@@ -31,3 +31,11 @@ footer {
     margin-right: auto;
     width: 40%;
   }
+
+#p1 {
+    background: lightcoral;
+    border: 1px solid pink;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px white;
+}
