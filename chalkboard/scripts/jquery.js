@@ -19,13 +19,14 @@ $(function () { //shorthand for $(document).ready(function())
     // FINISH THE 'HIDE IT' BUTTON
     $('#hideParagraph').on('click', function(){
         $('#leadParagraph').hide()
-      //Code goes here.
     });
   
     //  TOGGLE BUTTON
     // Use .on('click') on the toggleParagraph button
     // In the function, use .toggle() on the leadParagraph
-  
+    $('#toggleParagraph').on('click', function() {
+      $('#leadParagraph').toggle()
+    })
   
     // Get text and set text
     $('#getText').on('click', function(){

@@ -33,3 +33,5 @@ var scatterChart = new Chart(scatterCanvas, {
     type: 'scatter',
     data: popData
 });
+
+

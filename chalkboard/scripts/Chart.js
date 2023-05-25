@@ -36,3 +36,5 @@ var bubChart = new Chart(bubCanvas, {
   type: 'bubble',
   data: popData
 });
+
+

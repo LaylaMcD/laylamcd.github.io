@@ -14,12 +14,17 @@ function wikiAPI() {
 
         for (var i in pages) {
             var pageURL = "https://en.wikipedia.org/?curid=";
+            //create an element 'a'
             var newAnchor = document.createElement("a");
+            //give 'a' some attributes (href, className, innerText)
             newAnchor.href = pageURL + pages[i].pageid;
+            //how you add a className attribute to an HTML element by using a JS element 
             newAnchor.className = 'dblock';
+            //fill in what text will be on that page
             newAnchor.innerText = pages[i].title;
 
             var listItem = document.createElement('li'); // Create a new list item element
+           //position the 'a' element onto the page
             listItem.appendChild(newAnchor); // Append the anchor element to the list item
             list.appendChild(listItem); // Append the list item to the unordered list
         }
